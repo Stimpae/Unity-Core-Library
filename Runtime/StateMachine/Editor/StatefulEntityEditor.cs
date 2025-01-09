@@ -1,9 +1,9 @@
-﻿using Thundertale.Core.Editor;
+﻿using Pastime.Core.Editor;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Thundertale.Core.StateMachine.Editor {
+namespace Pastime.Core.StateMachine.Editor {
     /// <summary>
     /// Custom editor for StatefulEntity, providing a custom inspector GUI.
     /// </summary>

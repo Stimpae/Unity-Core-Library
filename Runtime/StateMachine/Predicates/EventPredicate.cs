@@ -1,8 +1,8 @@
 using System;
-using Thundertale.Core.EventBus;
-using Thundertale.Core.Utils;
+using Pastime.Core.EventBus;
+using Pastime.Core.Utils;
 
-namespace Thundertale.Core.StateMachine {
+namespace Pastime.Core.StateMachine {
     /// <summary>
     /// Represents a predicate that is triggered by an event and can be evaluated.
     /// </summary>

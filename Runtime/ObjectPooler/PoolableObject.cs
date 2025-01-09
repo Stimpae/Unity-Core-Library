@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Thundertale.Core.ObjectPooler {
+namespace Pastime.Core.ObjectPooler {
     /// <summary>
     /// This class is used to provide a callback to objects that are pooled.
     /// It is added automatically to objects that are pooled

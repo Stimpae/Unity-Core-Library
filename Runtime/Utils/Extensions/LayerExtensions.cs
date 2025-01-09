@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Thundertale.Core.Utils.Extensions {
+namespace Pastime.Core.Utils {
     /// <summary>
     ///  Extension methods for layers.
     /// </summary>

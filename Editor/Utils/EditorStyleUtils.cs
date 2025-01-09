@@ -1,9 +1,7 @@
-﻿using UnityEditor;
-using UnityEditor.UIElements;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Thundertale.Core.Editor {
+namespace Pastime.Core.Editor {
     /// <summary>
     /// Provides utility methods for creating and styling editor UI elements.
     /// </summary>

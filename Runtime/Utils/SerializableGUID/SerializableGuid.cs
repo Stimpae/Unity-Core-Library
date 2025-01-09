@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Thundertale.Core.Utils.SerializableGuid {
+namespace Pastime.Core.Utils {
     /// <summary>
     /// Represents a globally unique identifier (GUID) that is serializable with Unity and usable in game scripts.
     /// </summary>

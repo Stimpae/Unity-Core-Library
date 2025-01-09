@@ -2,7 +2,7 @@
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Thundertale.Core.ObjectPooler {
+namespace Pastime.Core.ObjectPooler {
     /// <summary>
     /// Manages a pool of reusable GameObjects to optimize performance by reducing the need for frequent instantiation and destruction.
     /// </summary>

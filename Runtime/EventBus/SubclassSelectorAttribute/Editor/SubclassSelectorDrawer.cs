@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
-namespace Thundertale.Core.EventBus.Editor {
+namespace Pastime.Core.EventBus.Editor {
     /// <summary>
     /// Custom property drawer for the <see cref="SubclassSelectorAttribute"/>.
     /// </summary>

@@ -1,7 +1,6 @@
-﻿using Thundertale.Core.StateMachine;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Thundertale.Core.StateMachine {
+namespace Pastime.Core.StateMachine {
     /// <summary>
     /// Represents a singleton entity with a state machine.
     /// </summary>

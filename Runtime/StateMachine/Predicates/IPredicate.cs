@@ -1,4 +1,4 @@
-﻿namespace Thundertale.Core.StateMachine {
+﻿namespace Pastime.Core.StateMachine {
     /// <summary>
     /// Defines a predicate interface for evaluating conditions.
     /// </summary>

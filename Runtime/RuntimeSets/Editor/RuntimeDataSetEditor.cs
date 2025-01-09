@@ -1,13 +1,10 @@
-﻿using UnityEditor;
+﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
-using System.Collections.Generic;
-using Thundertale.Core.Editor;
-using Thundertale.Core.RuntimeSet;
 
-
-namespace Thundertale.Core.RuntimeSet.Editor {
+namespace Pastime.Core.RuntimeSets.Editor {
     /// <summary>
     /// Custom editor for ScriptableObjects that displays a list of items in a multi-column list view.
     /// </summary>

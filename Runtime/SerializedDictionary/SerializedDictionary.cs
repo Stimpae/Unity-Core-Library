@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Thundertale.Core.SerializedDictionary {
+namespace Pastime.Core.SerializedDictionary {
     /// <summary>
     /// A serializable dictionary that can be used in Unity's inspector.
     /// </summary>

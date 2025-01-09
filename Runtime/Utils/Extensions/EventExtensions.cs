@@ -1,6 +1,6 @@
-﻿using Thundertale.Core.EventBus;
+﻿using Pastime.Core.EventBus;
 
-namespace Thundertale.Core.EventBus {
+namespace Pastime.Core.Utils {
     /// <summary>
     /// Provides extension methods for registering, raising, deregistering, and clearing events.
     /// </summary>

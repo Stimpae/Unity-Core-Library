@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Thundertale.Core.EventBus {
+namespace Pastime.Core.EventBus {
     /// <summary>
     /// Provides methods to interact with predefined assemblies.
     /// </summary>

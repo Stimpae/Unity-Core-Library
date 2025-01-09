@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Thundertale.Core.Utils.Singleton {
+namespace Pastime.Core.Utils{
     /// <summary>
     /// A generic singleton class for Unity components.
     /// </summary>

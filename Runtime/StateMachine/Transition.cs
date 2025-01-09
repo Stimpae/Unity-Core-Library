@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Thundertale.Core.StateMachine {
+namespace Pastime.Core.StateMachine {
     /// <summary>
     /// Represents an abstract transition between states.
     /// </summary>

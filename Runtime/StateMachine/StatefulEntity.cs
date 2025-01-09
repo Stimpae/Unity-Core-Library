@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Thundertale.Core.StateMachine {
+namespace Pastime.Core.StateMachine {
     /// <summary>
     /// Represents an entity with a state machine.
     /// </summary>

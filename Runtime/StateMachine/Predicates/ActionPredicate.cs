@@ -1,6 +1,6 @@
 using System;
 
-namespace Thundertale.Core.StateMachine {
+namespace Pastime.Core.StateMachine {
     /// <summary>
     /// Represents a predicate that is triggered by an action.
     /// </summary>

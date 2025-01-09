@@ -1,11 +1,10 @@
 ﻿using System.Reflection;
-using Thundertale.Core.Editor;
+using Pastime.Core.Editor;
 using UnityEditor;
-using UnityEngine;
-using UnityEngine.UIElements;
 using UnityEditor.UIElements;
+using UnityEngine.UIElements;
 
-namespace Thundertale.Core.SerializedDictionary.Editor {
+namespace Pastime.Core.SerializedDictionary.Editor {
     /// <summary>
     /// Custom property drawer for SerializedDictionary.
     /// </summary>

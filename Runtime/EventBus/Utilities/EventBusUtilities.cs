@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace Thundertale.Core.EventBus {
+namespace Pastime.Core.EventBus {
     /// <summary>
     /// Provides utility methods for managing event buses in the application.
     /// </summary>

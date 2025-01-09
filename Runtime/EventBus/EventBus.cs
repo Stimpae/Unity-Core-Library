@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace Thundertale.Core.EventBus {
+namespace Pastime.Core.EventBus {
     /// <summary>
     /// A static class that manages event bindings and raising events for a specific event type.
     /// </summary>

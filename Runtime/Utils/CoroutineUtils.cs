@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Thundertale.Core.Utils {
+namespace Pastime.Core.Utils {
     /// <summary>
     /// Encapsulates utility Coroutine methods.
     /// This class enables us to run coroutines from non-MonoBehaviour classes.

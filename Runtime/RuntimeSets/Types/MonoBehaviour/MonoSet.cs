@@ -1,7 +1,6 @@
-﻿using Thundertale.Core.RuntimeSet;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Thundertale.Core.RuntimeSet {
+namespace Pastime.Core.RuntimeSets {
     [CreateAssetMenu(menuName = "Runtime Set/Mono Set", fileName = "New Mono Set")]
-    public class MonoSet : RuntimeSet<MonoBehaviour> { }
+    public class MonoSet : RuntimeSet<UnityEngine.MonoBehaviour> { }
 }

@@ -1,6 +1,4 @@
-﻿using UnityEngine.Serialization;
-
-namespace Thundertale.Core.SerializedDictionary {
+﻿namespace Pastime.Core.SerializedDictionary {
     /// <summary>
     /// Represents a serializable key-value pair.
     /// </summary>

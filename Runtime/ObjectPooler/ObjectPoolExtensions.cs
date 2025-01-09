@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Thundertale.Core.ObjectPooler {
+namespace Pastime.Core.ObjectPooler {
     /// <summary>
     /// Provides extension methods for the ObjectPool class to manage pooling operations on GameObjects.
     /// </summary>

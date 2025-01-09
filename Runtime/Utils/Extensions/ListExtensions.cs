@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Thundertale.Core.Utils.Extensions {
+namespace Pastime.Core.Utils {
     /// <summary>
     /// Provides extension methods for List types
     /// </summary>

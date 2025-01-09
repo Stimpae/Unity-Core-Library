@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Thundertale.Core.Utils.SerializableGuid {
+namespace Pastime.Core.Utils {
     /// <summary>
     /// A component that holds a SerializableGuid.
     /// </summary>

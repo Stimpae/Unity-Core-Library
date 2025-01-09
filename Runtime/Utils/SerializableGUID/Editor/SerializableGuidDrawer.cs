@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Thundertale.Core.Utils.SerializableGuid.Editor {
+namespace Pastime.Core.Utils.Editor {
     /// <summary>
     /// Custom property drawer for SerializableGuid.
     /// </summary>

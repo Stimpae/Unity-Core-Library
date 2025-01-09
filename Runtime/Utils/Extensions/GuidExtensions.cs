@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Thundertale.Core.Utils.SerializableGuid {
+namespace Pastime.Core.Utils {
     /// <summary>
     /// Provides extension methods for the Guid class.
     /// </summary>

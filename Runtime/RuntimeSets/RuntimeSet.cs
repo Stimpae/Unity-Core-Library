@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Thundertale.Core.RuntimeSet {
+namespace Pastime.Core.RuntimeSets {
     /// <summary>
 /// A generic runtime set that manages a collection of items of type T.
 /// </summary>

@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using UnityEngine;
 
-namespace Thundertale.Core.SerializedDictionary {
+namespace Pastime.Core.SerializedDictionary{
     /// <summary>
     /// Attribute to mark a property as a serialized dictionary.
     /// This attribute is only active in the Unity Editor.

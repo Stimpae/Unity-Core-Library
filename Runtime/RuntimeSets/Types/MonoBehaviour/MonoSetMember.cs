@@ -1,11 +1,11 @@
-using Thundertale.Core.SerializedDictionary;
+using Pastime.Core.SerializedDictionary;
 using UnityEngine;
 
-namespace Thundertale.Core.RuntimeSet {
+namespace Pastime.Core.RuntimeSets {
     /// <summary>
     /// Manages the addition and removal of MonoBehaviour instances to a target runtime set.
     /// </summary>
-    public class MonoSetMember : MonoBehaviour {
+    public class MonoSetMember : UnityEngine.MonoBehaviour {
         /// <summary>
         /// The target runtime set to which the MonoBehaviour instances will be added or removed.
         /// </summary>
@@ -15,7 +15,7 @@ namespace Thundertale.Core.RuntimeSet {
         /// A dictionary of MonoBehaviour instances to be managed by the runtime set.
         /// </summary>
         [SerializedDictionary("ID", "Value")]
-        [SerializeField] private SerializedDictionary<string, MonoBehaviour> setMembers = new SerializedDictionary<string, MonoBehaviour>();
+        [SerializeField] private SerializedDictionary<string, UnityEngine.MonoBehaviour> setMembers = new SerializedDictionary<string, UnityEngine.MonoBehaviour>();
     
         /// <summary>
         /// Adds the MonoBehaviour instances to the target runtime set when the object is enabled.

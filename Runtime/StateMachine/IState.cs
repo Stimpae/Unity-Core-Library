@@ -1,4 +1,4 @@
-﻿namespace Thundertale.Core.StateMachine {
+﻿namespace Pastime.Core.StateMachine {
     /// <summary>
     /// Defines the interface for a state in the state machine.
     /// </summary>
