@@ -64,6 +64,10 @@ namespace Pastime.Core.ObjectPooler {
         /// </summary>
         public void PoolObjects() {
             foreach (var item in itemsToPool) {
+                if(item.prefab == null) {
+                    Debug.LogWarning("Prefab is null. Skipping...");
+                    continue;
+                }
                 item.prefab.Clear(true);
                 item.prefab.Populate(item.amount);
             }
