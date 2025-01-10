@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "displayName": "Unity Core Library",
   "description": "",
-  "unity": "2023.3.15f",
+  "unity": "2023.3",
   "author": {
     "name": "Pastime Games"
   }
