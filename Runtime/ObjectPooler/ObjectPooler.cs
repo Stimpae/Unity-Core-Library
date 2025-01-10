@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Pastime.Core.ObjectPooler {
@@ -70,6 +71,20 @@ namespace Pastime.Core.ObjectPooler {
                 }
                 item.prefab.Clear(true);
                 item.prefab.Populate(item.amount);
+            }
+        }
+        
+        /// <summary>
+        /// Pools the objects specified in the itemsToPool array asynchronously.
+        /// </summary>
+        public async Task PoolObjectsAsync() {
+            foreach (var item in itemsToPool) {
+                if(item.prefab == null) {
+                    Debug.LogWarning("Prefab is null. Skipping...");
+                    continue;
+                }
+                item.prefab.Clear(true);
+                await item.prefab.PopulateAsync(item.amount);
             }
         }
     }

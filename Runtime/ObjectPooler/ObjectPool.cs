@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Dynamic;
+using System.Threading.Tasks;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -243,6 +246,31 @@ namespace Pastime.Core.ObjectPooler {
             InstanceLookup[instance.gameObject] = this;
             m_allInstances.Add(instance.gameObject);
             return instance;
+        }
+
+        private async Task<PoolableObject[]> CreateInstanceAsync(int count) {
+            var instances = await Object.InstantiateAsync(m_originalPoolableObject, count);
+            return instances;
+        }
+        
+        /// <summary>
+        /// Asynchronously populates the pool with a specified number of instances.
+        /// </summary>
+        /// <param name="count">The number of instances to populate the pool with.</param>
+        /// <param name="createParent">Whether to create a parent GameObject for the instances.</param>
+        public async Task PopulateAsync(int count, bool createParent) {
+            if (createParent) {
+                var parent = new GameObject("[Object Pool] " + m_original.name);
+                ParentLookup.Add(m_original, parent);
+            }
+            
+            var instances = await CreateInstanceAsync(count);
+            foreach (var instance in instances) {
+                m_allInstances.Add(instance.gameObject);
+                instance.gameObject.SetActive(false);
+                if (createParent) instance.transform.SetParent(ParentLookup[m_original].transform);
+                m_instances.Push(instance);
+            }
         }
     }
 }

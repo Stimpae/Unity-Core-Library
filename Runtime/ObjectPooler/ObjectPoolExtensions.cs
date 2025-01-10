@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Pastime.Core.ObjectPooler {
     /// <summary>
@@ -23,6 +24,27 @@ namespace Pastime.Core.ObjectPooler {
         /// <param name="parent">The parent transform to set for each instance.</param>
         public static void Populate(this GameObject prefab, int count, Transform parent) {
             ObjectPool.GetPoolByPrefab(prefab).Populate(count, parent);
+        }
+        
+        /// <summary>
+        /// Populates the pool with a specified number of instances of the prefab asynchronously.
+        /// </summary>
+        /// <param name="prefab">The prefab to populate the pool with.</param>
+        /// <param name="count">The number of instances to create.</param>
+        /// <param name="createParent">Whether to create a parent for the instances.</param>
+        public static async Task PopulateAsync(this GameObject prefab, int count, bool createParent = true) {
+            await ObjectPool.GetPoolByPrefab(prefab).PopulateAsync(count, createParent);
+        }
+        
+        
+        /// <summary>
+        /// Populates the pool with a specified number of instances of the prefab asynchronously, setting the parent of each instance.
+        /// </summary>
+        /// <param name="prefab">The prefab to populate the pool with.</param>
+        /// <param name="count">The number of instances to create.</param>
+        /// <param name="parent">The parent transform to set for each instance.</param>
+        public static async Task PopulateAsync(this GameObject prefab, int count, Transform parent) {
+            await ObjectPool.GetPoolByPrefab(prefab).PopulateAsync(count, parent);
         }
         
         /// <summary>
