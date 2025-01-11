@@ -17,7 +17,7 @@ namespace Pastime.Core.Utils {
         /// <param name="sampleTime">The time at which to sample the animation.</param>
         /// <param name="clipIndex">The index of the animation clip within the track.</param>
         /// <param name="trackName">The name of the animation track.</param>
-        public static void SampleAnimationTrack(PlayableDirector playable, Animator animator, float sampleTime, int clipIndex, string trackName) {
+        public static void SampleAnimationTrack(this PlayableDirector playable, Animator animator, float sampleTime, int clipIndex, string trackName) {
             var timelineAsset = playable.playableAsset as TimelineAsset;
             if (timelineAsset == null) {
                 Debug.LogWarning("Timeline asset is not valid");
@@ -40,7 +40,7 @@ namespace Pastime.Core.Utils {
         /// <param name="timelineAsset">The timeline asset containing the tracks.</param>
         /// <param name="trackName">The name of the animation track to retrieve.</param>
         /// <returns>The animation track if found, otherwise null.</returns>
-        private static AnimationTrack GetAnimationTrack(TimelineAsset timelineAsset, string trackName) {
+        private static AnimationTrack GetAnimationTrack(this TimelineAsset timelineAsset, string trackName) {
             foreach (var track in timelineAsset.GetOutputTracks()) {
                 if (track.name == trackName && track is AnimationTrack animTrack) {
                     return animTrack;
@@ -56,7 +56,7 @@ namespace Pastime.Core.Utils {
         /// <param name="animator">The Animator component to which the animation is applied.</param>
         /// <param name="sampleTime">The time at which to sample the animation.</param>
         /// <param name="clipIndex">The index of the animation clip within the track.</param>
-        private static void SampleAnimationClip(AnimationTrack animationTrack, Animator animator, float sampleTime, int clipIndex) {
+        private static void SampleAnimationClip(this AnimationTrack animationTrack, Animator animator, float sampleTime, int clipIndex) {
             var clip = animationTrack.GetClips().ElementAtOrDefault(clipIndex)?.animationClip;
             if (clip != null) {
                 clip.SampleAnimation(animator.gameObject, sampleTime);
