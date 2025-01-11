@@ -1,7 +1,9 @@
 {
     "name": "Pastime.Core",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:f06555f75b070af458a003d92f9efb00"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -9,6 +11,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.timeline",
+            "expression": "1",
+            "define": "TIMELINE_INSTALLED"
+        }
+    ],
     "noEngineReferences": false
 }
